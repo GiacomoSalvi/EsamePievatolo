@@ -1,0 +1,818 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	/*background-color: #212c3b;*/
+}
+
+
+@font-face {
+  font-family: Ubuntu;
+  src: url("Ubuntu/ubuntu-v15-latin-regular.woff");
+}
+
+@font-face {
+  font-family: Audiowide;
+  src: url("Audiowide/audiowide-v9-latin-regular.woff");
+}
+
+
+header {
+	width: 100%;
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	font-family: Ubuntu;
+	background-color: #212c3b;
+}
+
+section {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+section h1.about_us {
+	margin: auto;
+	margin-top: 5%;
+	font-size: 36px;
+}
+
+ul {
+	padding-inline-start: 0px;
+}
+
+a {
+	color: white;
+	font-family: Audiowide, sans-serif;
+	text-decoration: none;
+}
+
+h1 {
+	font-family: Audiowide, sans-serif;
+	display: flex;
+	justify-content: center;
+	color: #212c3b;
+	/*color: white;*/
+}
+
+p {
+	font-family: Ubuntu;
+	font-style: italic;
+	font-size: large;
+	/*color: white;*/
+	color: #212c3b;
+	opacity: 0.9;
+	text-align: left;
+	margin-top: 3%;
+	position: relative;
+	margin-left: 1%;
+	margin-right: 1.5%;
+	line-height: 1.6;
+}
+
+div.follow-describes p {
+	text-align: center;
+}
+
+div.comments p {
+	text-align: center;
+}
+
+li {
+	list-style: none;
+	color: white;
+}
+
+cite {
+	color: #212c3b;
+	text-align: left;
+	margin-left: 1%;
+	padding: 2%;
+}
+
+figure {
+	margin: 0;
+}
+
+
+/* Navigation Bar */
+
+.brand {
+	width: auto;
+	height: 100%;
+	float: left;
+	margin-left: 1%;
+	font-size: 30px;
+	font-family: Audiowide, sans-serif;
+	color: white;
+}
+
+.menu {
+	width: 60%;
+	height: 100%;
+	float: right;
+}
+
+.menu ul {
+	width: 100%;
+	height: inherit;
+	margin: 0;
+	padding: 0 5%;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.menu ul li {
+	height: inherit;
+	color: #222;
+	display: inline-block;
+}
+
+.menu ul li:hover {
+	background-color: grey;
+	color: #fff;
+}
+
+#menuToggle {
+	display: none;
+}
+
+.menu-icon {
+	display: none;
+}
+
+
+/* First Page (home)*/
+
+.association {
+	width: 100%;
+	height: 500px;
+	margin-top: 50px;
+}
+
+.structure,
+.services {
+	width: 100%;
+	height: 500px;
+	margin-top: 50px;
+	position: relative;
+}
+
+.association-one {
+	height: 100%;
+	width: 50%;
+	display: inline-block;
+	padding: 2%;
+}
+
+.structure-one {
+	height: 100%;
+	width: 50%;
+	display: inline-block;
+	float: right;
+	padding: 2%;
+}
+
+.services-one {
+	height: 100%;
+	width: 50%;
+	display: inline-block;
+	float: left;
+	padding: 2%;
+}
+
+.association-pic {
+	height: 100%;
+	width: 50%;
+	float: right;
+	display: inline-block;
+	position: relative;
+}
+
+.structure-pic {
+	height: 100%;
+	width: 50%;
+	float: left;
+	display: inline-block;
+	position: absolute;
+}
+
+.services-pic {
+	height: 100%;
+	width: 50%;
+	float: right;
+	display: inline-block;
+	position: absolute;
+}
+
+.proval {
+	width: 80%;
+	display: inline-block;
+	border: 2px solid #212c3b;
+	border-radius: 15px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.provar {
+	width: 80%;
+	display: inline-block;
+	border: 2px solid #212c3b;
+	border-radius: 15px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.provas {
+	width: 80%;
+	display: inline-block;
+	border: 2px solid #212c3b;
+	border-radius: 15px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+/* Page dividers */
+
+.page-dividers {
+	width: 100%;
+	display: inline-block;
+}
+
+.line-left {
+	width: 39%;
+	height: 250px;
+	display: inline-block;
+	position: relative;
+}
+
+.book-divider {
+	width: 20%;
+	height: 250px;
+	display: inline-block;
+	position: relative;
+}
+
+.line-right {
+	width: 39%;
+	height: 250px;
+	display: inline-block;
+	position: relative;
+}
+
+.dividers {
+	width: 50%;
+	height: 50%;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 25%;
+	transform: translateY(-50%);
+}
+
+
+/* Footer */
+
+.footer-container {
+	width: 100%;
+	display: inline-block;
+}
+
+.like-footer {
+	width: 33%;
+	height: 50px;
+	display: inline-block;
+	border: solid grey;
+	border-width: thin;
+	border-radius: 20px;
+	background-color: rgb(19, 26, 38);
+	position: relative;
+	text-align: center;
+}
+
+.user-footer {
+	width: 33%;
+	height: 50px;
+	display: inline-block;
+	border: solid grey;
+	border-width: thin;
+	border-radius: 20px;
+	background-color: rgb(19, 26, 38);
+	position: relative;
+}
+
+.star-footer {
+	width: 33%;
+	height: 50px;
+	display: inline-block;
+	border: solid grey;
+	border-width: thin;
+	border-radius: 20px;
+	background-color: rgb(19, 26, 38);
+	position: relative;
+}
+
+.images-container {
+	height: 100%;
+}
+
+.img-footer {
+	height: 30px;
+	width: 30px;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+/* Seconda pagina (la nostra storia)*/
+
+.about-us-left {
+	width: 33%;
+	height: 520px;
+	display: inline-block;
+	margin: 150px auto;
+	border: 2px solid rgb(19, 26, 38);
+	border-radius: 15px;
+	box-shadow: 5px 5px rgb(19, 26, 38);
+	float: left;
+	margin-left: 0.3%;
+}
+
+.about-us-center {
+	width: 33%;
+	height: 520px;
+	display: inline-block;
+	margin: 300px auto;
+	border: 2px solid rgb(19, 26, 38);
+	border-radius: 15px;
+	box-shadow: 5px 5px rgb(19, 26, 38);
+	float: left;
+	margin-left: 0.3%;
+}
+
+.about-us-right {
+	width: 33%;
+	height: 520px;
+	display: inline-block;
+	margin: 450px auto;
+	margin-bottom: 100px;
+	border: 2px solid rgb(19, 26, 38);
+	border-radius: 15px;
+	box-shadow: 5px 5px rgb(19, 26, 38);
+	float: left;
+	margin-left: 0.3%;
+}
+
+
+/* Terza pagina (su di noi)*/
+
+.images-gallery {
+	width: 50%;
+	height: auto;
+	display: inline-block;
+	float: left;
+	margin-top: 5%;
+	margin-bottom: 25px;
+}
+
+.gallery {
+	margin-bottom: 25px;
+}
+
+.comments-about-us {
+	width: 50%;
+	height: auto;
+	display: inline-block;
+	float: right;
+	margin-top: 5%;
+}
+
+.comment-one {
+	width: 50%;
+	height: 20%;
+	margin-left: 5%;
+	margin-right: 40%;
+	display: block;
+	border: 1px solid #212c3b;
+	border-radius: 15px;
+}
+
+.comment-two {
+	height: 20%;
+	width: 50%;
+	display: block;
+	margin-left: 40%;
+	border: 1px solid #212c3b;
+	border-radius: 15px;
+	margin-top: 1%;
+}
+
+.comment-three {
+	height: 20%;
+	width: 50%;
+	display: block;
+	margin-left: 5%;
+	margin-right: 40%;
+	border: 1px solid #212c3b;
+	border-radius: 15px;
+	margin-top: 1%;
+}
+
+.comment-four {
+	height: 20%;
+	width: 50%;
+	display: block;
+	margin-left: 40%;
+	border: 1px solid #212c3b;
+	border-radius: 15px;
+	margin-top: 1%;
+}
+
+.wwaimg {
+	height: 45%;
+	width: 20%;
+	display: block;
+	margin-top: 2%;
+	float: left;
+}
+
+
+/* Sezione Contatti */
+
+.following {
+	width: 100%;
+	display: inline-block;
+	height: 400px;
+}
+
+.following-cards {
+	width: 100%;
+	height: 250px;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 120px;
+}
+
+.following-container-one,
+.following-container-two,
+.following-container-three,
+.following-container-four {
+	width: 20%;
+	height: 100%;
+	display: block;
+	border-radius: 30px;
+}
+
+.cards-icons {
+	height: 96px;
+	width: 96px;
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	opacity: 0.9;
+}
+
+div.gallery {
+	border: 1px solid white;
+	float: left;
+	width: 23.5%;
+}
+
+div.gallery img {
+	width: 100%;
+	height: 130px;
+	border-style: solid;
+	border-width: thin;
+	border-color: #212c3b;
+	border-radius: 15px;
+}
+
+div.desc {
+	padding: 5px;
+	text-align: center;
+	color: #212c3b;
+	font-family: Ubuntu;
+	font-style: italic;
+	border-style: solid;
+	border-width: thin;
+	border-radius: 15px;
+}
+
+@media (max-width: 1080px) {
+	section {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-content: center;
+	}
+}
+
+
+/* Gestione Mobile Navbar*/
+
+@media screen and (max-width: 1080px) {
+	li {
+		line-height: 150px;
+	}
+	.menu {
+		width: 100%;
+		height: auto;
+	}
+	.menu ul {
+		display: block;
+		max-height: 0;
+		overflow: hidden;
+	}
+	/*
+	.menu ul a {
+		width: 100%;
+		height: 150px;
+		background-color: #212c3b;
+		border-style: solid;
+		border-width: thin;
+		border-color: white;
+	}
+	*/
+
+	.menu ul {
+			display: block;
+			max-height: 0;
+			overflow: hidden;
+			padding: 0;
+	}
+
+	.menu ul li {
+		 width: 100%;
+		 height: 150px;
+		 background-color: #212c3b;
+		 border-style: solid;
+		 border-width: thin;
+		 border-color: white;
+		 display: block;
+ }
+
+	.menu-icon {
+		width: 100px;
+		height: 80px;
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	.menu-icon i {
+		font-size: 1.7em;
+		position: relative;
+		color: white;
+		line-height: 80px;
+	}
+	#menuToggle:checked~ul {
+		max-height: 100%;
+	}
+}
+
+
+/* Gestione mobile page-dividers */
+
+@media (max-width: 1080px) {
+	.line-left {
+		width: 33%;
+		height: 200px;
+		display: inline-block;
+		position: relative;
+	}
+	.book-divider {
+		width: 32%;
+		height: 200px;
+		display: inline-block;
+		position: relative;
+	}
+	.line-right {
+		width: 33%;
+		height: 200px;
+		display: inline-block;
+		float: right;
+		position: relative;
+	}
+	.page-dividers {
+		position: relative;
+	}
+	.dividers {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 25%;
+	}
+}
+
+
+/* Gestione mobile following */
+
+@media (max-width: 1080px) {
+	.following {
+		width: 100%;
+		height: 600px;
+	}
+	.following-cards {
+		width: 100%;
+		height: 600px;
+		display: block;
+		justify-content: space-around;
+		margin-top: 0;
+	}
+	.following-container-one,
+	.following-container-two,
+	.following-container-three,
+	.following-container-four {
+		width: 100%;
+		height: 150px;
+		display: block;
+		position: relative;
+	}
+	.cards-icons {
+		height: 60px;
+		width: 60px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		opacity: 0.9;
+	}
+}
+
+
+/* Gestione mobile footer */
+
+@media (max-width: 1080px) {
+	.like-footer {
+		width: 100%;
+		height: 50px;
+		margin: 10px auto;
+		border: 1px solid grey;
+	}
+	.user-footer {
+		width: 100%;
+		height: 50px;
+		margin: 10px auto;
+		border: 1px solid grey;
+	}
+	.star-footer {
+		width: 100%;
+		height: 50px;
+		margin: 10px auto;
+		border: 1px solid grey;
+	}
+}
+
+
+/* Gestione mobile prima pagina (home)*/
+
+@media (max-width: 1080px) {
+	.association,
+	.structure,
+	.services {
+		height: auto;
+	}
+	.association-one,
+	.structure-one,
+	.services-one {
+		width: 100%;
+		height: auto;
+		margin: 10px auto;
+	}
+	.association-pic {
+		width: 100%;
+		height: 450px;
+		/*margin: 10px auto;*/
+		display: block;
+		position: relative;
+		float: none;
+	}
+	.structure-pic,
+	.services-pic {
+		width: 100%;
+		height: 450px;
+		/*margin: 10px auto;*/
+		display: inline-block;
+		position: relative;
+		float: none;
+	}
+	.proval {
+		width: 70%;
+		display: inline-block;
+		border: 2px solid #212c3b;
+		border-radius: 15px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.provar {
+		width: 70%;
+		display: inline-block;
+		border: 2px solid #212c3b;
+		border-radius: 15px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.provas {
+		width: 65%;
+		display: inline-block;
+		border: 2px solid #212c3b;
+		border-radius: 15px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+
+/* Gestione mobile seconda pagina (la nostra storia)*/
+
+@media (max-width: 1080px) {
+	.about-us-left {
+		width: 100%;
+		height: auto;
+		margin-bottom: 15px;
+		margin-top: 50px;
+		float: none;
+		display: block;
+	}
+	.about-us-center {
+		width: 100%;
+		height: auto;
+		margin-top: 10px;
+		margin-bottom: 15px;
+		float: none;
+		display: block;
+	}
+	.about-us-right {
+		width: 100%;
+		height: auto;
+		margin-top: 10px;
+		margin-bottom: 15px;
+		float: none;
+		display: block;
+	}
+}
+
+
+/* Gestione mobile terza pagine (su di noi)*/
+
+@media (max-width: 1080px) {
+	.comment-one,
+	.comment-two,
+	.comment-three,
+	.comment-four {
+		width: 98%;
+		height: 20%;
+		margin-left: 1%;
+		margin-right: 1%;
+		margin-top: 0;
+		margin-bottom: 5%;
+	}
+}
+
+@media (max-width: 1080px) {
+	div.gallery {
+		width: 100%;
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
+	div.gallery img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+@media (max-width: 1080px) {
+	.images-gallery {
+		width: 100%;
+		height: auto;
+		display: inline-block;
+		float: none;
+	}
+	.comments-about-us {
+		width: 100%;
+		height: 700px;
+		display: inline-block;
+		margin-bottom: auto;
+	}
+}
